@@ -1,67 +1,60 @@
 /*
-	Outputs classes (.columns-#) for each column <= $nbrOfColumns in _variables.scss
-	<div class="columns-6"></div> is 50% width in a 12-column layout
+Syntax error: File to import not found or unreadable: sassquatch/sassquatch.
+              Load path: F:/WebDev/xampp/htdocs/responsive/wp-content/themes/spring-theme (DEPRECATED)
+        on line 15 of scss/style.scss
+
+10:     Tags: white, light, two-column, flexible-width, right-sidebar, featured-images
+11: --*\/
+12: 
+13: @import "variables";
+14: 
+15: @import "sassquatch/sassquatch";
+16: 
+17: @import "reset-normalize";
+18: 
+19: @import "header";
+20: @import "front-page";
+
+Backtrace:
+scss/style.scss:15
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/import_node.rb:45:in `import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:223:in `visit_import'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:99:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:99:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:53:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:108:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:120:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:107:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:127:in `visit_root'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:37:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:98:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:7:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/engine.rb:275:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/plugin/compiler.rb:339:in `update_stylesheet'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/plugin/compiler.rb:191:in `block in update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/plugin/compiler.rb:188:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/plugin/compiler.rb:188:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/plugin/compiler.rb:274:in `block in watch'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/listener.rb:236:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/listener.rb:236:in `on_change'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/listener.rb:271:in `block in initialize_adapter'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/adapter.rb:289:in `block in start_poller'
 */
-.columns-1, .columns-2, .columns-3, .columns-4, .columns-5, .columns-6, .columns-7, .columns-8, .columns-9, .columns-10, .columns-11, .columns-12 {
-  width: 100%; }
-
-@media only screen and (min-width: 64em) {
-  .columns-1 {
-    float: left;
-    width: 8.33333%;
-    padding: 0 10px; }
-
-  .columns-2 {
-    float: left;
-    width: 16.66667%;
-    padding: 0 10px; }
-
-  .columns-3 {
-    float: left;
-    width: 25%;
-    padding: 0 10px; }
-
-  .columns-4 {
-    float: left;
-    width: 33.33333%;
-    padding: 0 10px; }
-
-  .columns-5 {
-    float: left;
-    width: 41.66667%;
-    padding: 0 10px; }
-
-  .columns-6 {
-    float: left;
-    width: 50%;
-    padding: 0 10px; }
-
-  .columns-7 {
-    float: left;
-    width: 58.33333%;
-    padding: 0 10px; }
-
-  .columns-8 {
-    float: left;
-    width: 66.66667%;
-    padding: 0 10px; }
-
-  .columns-9 {
-    float: left;
-    width: 75%;
-    padding: 0 10px; }
-
-  .columns-10 {
-    float: left;
-    width: 83.33333%;
-    padding: 0 10px; }
-
-  .columns-11 {
-    float: left;
-    width: 91.66667%;
-    padding: 0 10px; }
-
-  .columns-12 {
-    float: left;
-    width: 100%;
-    padding: 0 10px; } }
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: sassquatch/sassquatch.\A               Load path: F:/WebDev/xampp/htdocs/responsive/wp-content/themes/spring-theme (DEPRECATED)\A         on line 15 of scss/style.scss\A \A 10:     Tags: white, light, two-column, flexible-width, right-sidebar, featured-images\A 11: --*/\A 12: \A 13: @import \"variables\";\A 14: \A 15: @import \"sassquatch/sassquatch\";\A 16: \A 17: @import \"reset-normalize\";\A 18: \A 19: @import \"header\";\A 20: @import \"front-page\";"; }
