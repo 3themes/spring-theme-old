@@ -1,0 +1,9 @@
+.wrapper {
+	padding: 1em;
+}
+
+@media only screen and (min-width: #{$midBreakpoint}) {}
+.wrapper {
+	max-width: 48.5em;
+	margin: 0 auto;
+}

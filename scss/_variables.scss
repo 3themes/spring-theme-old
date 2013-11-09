@@ -24,17 +24,17 @@ $baseFont: 'PT Sans', sans-serif;
 $baseFontSize: 125%;
 $baselineHeight: 1.2em;
 $headingFont: $baseFont;
-$headingLineHeight: 1.35em;
+$headingLineHeight: 1.1;
 $headingFontWeight: bold;
 $headingColor: $darkGrey;
 $headingTextShadow: $lightGrey 1px 1px;
 $codeFont: Monaco, Courier New, monospace;
 
 // Links
-$linkColor: $primaryColor; //#8B95B3
-$linkHover: darken($linkColor,5%);
-$linkVisited: darken($linkColor,10%);
-$linkFocus: darken($linkColor,15%);
+$linkColor: $primaryColor;
+$linkHover: darken($linkColor,10%);
+$linkVisited: darken($linkColor,15%);
+$linkFocus: darken($linkColor,20%);
 
 // Forms
 $textboxBackground: $white;
@@ -62,3 +62,7 @@ $tableBorderWidth: 1px;
 $tableBorderStyle: solid;
 $tableBorderColor: $lighterGrey;
 $tableHover: transparent;
+
+// Breakpoints
+$smallBreakpoint: 30.5em;
+$midBreakpoint: 48.5em;

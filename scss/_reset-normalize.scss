@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, cod
     font-weight: normal;
     font-style: normal;
     font-size: 100%;
-    line-height: 1.2;
+    line-height: 1.1;
     font-family: inherit;
 }
 
@@ -27,10 +27,10 @@ audio[controls], canvas, video {
     *zoom: 1;
 }
 
-* {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+*,
+*:before,
+*:after {
+    @include box-sizing();
 }
 
 /*
@@ -188,6 +188,10 @@ i,
 dfn,
 em {
     font-style: italic;
+
+	a {
+		font-style: italic;
+	}
 }
 
 u {
@@ -247,7 +251,7 @@ sub {
 a {
     color: $linkColor;
     text-decoration: none;
-    cursor:  pointer;
+    cursor: pointer;
 
     &:hover {
         color: $linkHover;
