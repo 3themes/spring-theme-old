@@ -4,7 +4,7 @@ function spring_theme_init()
 {
 
 	//enqueue all the things! (modernizr, jQuery, hoverIntent, SuperFish, comment-reply)
-	add_action('wp_enqueue_scripts', 'spring_scripts_method');
+	add_action('wp_enqueue_scripts', 'spring_enqueue_scripts');
 
 	//add some helpers to poor old IE
 	add_action('wp_head', 'spring_add_ie_helpers');
@@ -50,7 +50,7 @@ function spring_theme_init()
 spring_theme_init();
 
 //enqueue scripts
-function spring_scripts_method()
+function spring_enqueue_scripts()
 {
 	wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/js/modernizr-2.6.3.dev.js' );
 	wp_enqueue_script( 'jquery', get_site_url() . '/wp-includes/js/jquery/jquery.js', '', '', true );
@@ -61,6 +61,12 @@ function spring_scripts_method()
 	if (is_singular()) {
 		wp_enqueue_script( 'comment-reply', get_site_url() . '/wp-includes/js/comment-reply.js', '', '', true );
 	}
+
+	wp_enqueue_style( 'springstyles', get_stylesheet_uri() );
+}
+
+function spring_enqueue_styles() {
+
 }
 
 //add IE8 helper scripts to header
