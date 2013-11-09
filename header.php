@@ -18,7 +18,7 @@
     <header class="main">
         <h1>
             <!-- TODO: Create option in theme customizer to upload new logo -->
-            <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>" /><?php bloginfo('name'); ?></a>
+            <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a>
         </h1>
         <nav class="primary" role="navigation">
             <?php wp_nav_menu( array(
@@ -26,7 +26,7 @@
                 'menu_class' => 'springtheme-main-menu',
                 'menu_id' => 'main-nav',
                 'depth' => 0,
-                'theme_location' => 'header-menu'
+                'theme_location' => 'header_menu'
             ));
             ?>
         </nav>
