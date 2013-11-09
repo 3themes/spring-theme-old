@@ -1,60 +1,572 @@
+/*--
+    Theme Name:  Spring
+    Theme URI:  http: //www.github.com/3themes/spring-theme
+    Description:  A beautifully vanilla WordPress theme
+    Author:  3themes
+    Author URI:  http: //3them.es
+    Version: 0.0.1
+    License: GPLv2
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: white, light, two-column, flexible-width, right-sidebar, featured-images
+--*/
 /*
-Syntax error: File to import not found or unreadable: sassquatch/sassquatch.
-              Load path: F:/WebDev/xampp/htdocs/responsive/wp-content/themes/spring-theme (DEPRECATED)
-        on line 15 of scss/style.scss
-
-10:     Tags: white, light, two-column, flexible-width, right-sidebar, featured-images
-11: --*\/
-12: 
-13: @import "variables";
-14: 
-15: @import "sassquatch/sassquatch";
-16: 
-17: @import "reset-normalize";
-18: 
-19: @import "header";
-20: @import "front-page";
-
-Backtrace:
-scss/style.scss:15
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:223:in `visit_import'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:99:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:99:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:108:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:120:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:107:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:127:in `visit_root'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:98:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/engine.rb:275:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/plugin/compiler.rb:339:in `update_stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/plugin/compiler.rb:191:in `block in update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/plugin/compiler.rb:188:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/plugin/compiler.rb:188:in `update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.0.alpha.253/lib/sass/plugin/compiler.rb:274:in `block in watch'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/listener.rb:236:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/listener.rb:236:in `on_change'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/listener.rb:271:in `block in initialize_adapter'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/listen-1.1.6/lib/listen/adapter.rb:289:in `block in start_poller'
+	Outputs classes (.columns-#) for each column <= $nbrOfColumns in _variables.scss
+	<div class="columns-6"></div> is 50% width in a 12-column layout
 */
-body:before {
+.columns-1, .columns-2, .columns-3, .columns-4, .columns-5, .columns-6, .columns-7, .columns-8, .columns-9, .columns-10, .columns-11, .columns-12 {
+  width: 100%; }
+
+@media only screen and (min-width: 64em) {
+  .columns-1 {
+    float: left;
+    width: 8.33333%;
+    padding: 0 10px; }
+
+  .columns-2 {
+    float: left;
+    width: 16.66667%;
+    padding: 0 10px; }
+
+  .columns-3 {
+    float: left;
+    width: 25%;
+    padding: 0 10px; }
+
+  .columns-4 {
+    float: left;
+    width: 33.33333%;
+    padding: 0 10px; }
+
+  .columns-5 {
+    float: left;
+    width: 41.66667%;
+    padding: 0 10px; }
+
+  .columns-6 {
+    float: left;
+    width: 50%;
+    padding: 0 10px; }
+
+  .columns-7 {
+    float: left;
+    width: 58.33333%;
+    padding: 0 10px; }
+
+  .columns-8 {
+    float: left;
+    width: 66.66667%;
+    padding: 0 10px; }
+
+  .columns-9 {
+    float: left;
+    width: 75%;
+    padding: 0 10px; }
+
+  .columns-10 {
+    float: left;
+    width: 83.33333%;
+    padding: 0 10px; }
+
+  .columns-11 {
+    float: left;
+    width: 91.66667%;
+    padding: 0 10px; }
+
+  .columns-12 {
+    float: left;
+    width: 100%;
+    padding: 0 10px; } }
+/*
+  ---- ---- ---- ---- RESET STYLESHEET ---- ---- ---- ----
+*/
+html, body {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1.2;
+  font-family: inherit; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+audio[controls], canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+  ---- ---- ---- ---- ALL VIEWPORTS AND SIZES ---- ---- ---- ----
+*/
+/* BODY */
+@-webkit-viewport {
+  width: device-width; }
+
+@-moz-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
+html {
+  width: 100%;
+  height: 100%;
+  background: white;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-family: "PT Sans", sans-serif;
+  font-size: 125%;
+  line-height: 1.2em;
+  color: #404040; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    display: table;
+    content: ""; }
+  .clearfix:after {
+    clear: both; }
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+  color: #404040;
+  line-height: 1.35em;
+  text-rendering: optimizeLegibility;
+  text-shadow: #bfbfbf 1px 1px; }
+
+h1,
+.h1 {
+  margin-bottom: 0.8em;
+  font-size: 1.75em; }
+
+h2,
+.h2 {
+  margin-bottom: 0.8em;
+  font-size: 1.375em; }
+
+h3,
+.h3 {
+  margin-bottom: 0.68571em;
+  font-size: 1.25em; }
+
+h4,
+.h4 {
+  margin-bottom: 0.68571em;
+  font-size: 1em; }
+
+h5,
+.h5 {
+  margin-bottom: 0.6em;
+  font-size: 1em; }
+
+h6,
+.h6 {
+  margin-bottom: 0.6em;
+  font-size: 1em;
+  font-weight: normal; }
+
+p,
+ol,
+ul,
+dl,
+address {
+  margin-bottom: 1.2em;
+  line-height: 1.44em; }
+
+small {
+  font-size: .875em; }
+
+ul,
+ol {
+  margin-left: 1em;
+  padding: 0 0 0 1em; }
+
+li {
+  margin-bottom: .375em; }
+
+blockquote {
+  margin: 0 1em 1.2em 0;
+  padding-left: .75em;
+  border-left: 0.75em solid #bfbfbf;
+  font-family: "PT Sans", sans-serif;
+  font-style: italic; }
+
+dl,
+dd {
+  margin-bottom: 1.2em; }
+
+dt {
+  font-weight: bold; }
+
+b,
+strong {
+  font-weight: bold; }
+  b a,
+  strong a {
+    font-weight: bold; }
+
+i,
+dfn,
+em {
+  font-style: italic; }
+
+u {
+  text-decoration: underline; }
+
+ins {
+  background-color: #e6e6e6;
+  color: red;
+  text-decoration: none; }
+
+mark {
+  background-color: #e6e6e6;
+  color: red;
+  font-style: italic;
+  font-weight: bold; }
+
+pre,
+code,
+kdb,
+samp {
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.25em;
+  background-color: #bfbfbf;
+  border: 1px solid #404040;
+  font-family: Monaco, Courier New, monospace;
+  font-size: .875em;
+  color: #404040; }
+
+pre {
   white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: sassquatch/sassquatch.\A               Load path: F:/WebDev/xampp/htdocs/responsive/wp-content/themes/spring-theme (DEPRECATED)\A         on line 15 of scss/style.scss\A \A 10:     Tags: white, light, two-column, flexible-width, right-sidebar, featured-images\A 11: --*/\A 12: \A 13: @import \"variables\";\A 14: \A 15: @import \"sassquatch/sassquatch\";\A 16: \A 17: @import \"reset-normalize\";\A 18: \A 19: @import \"header\";\A 20: @import \"front-page\";"; }
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+sub,
+sup {
+  position: relative;
+  font-size: .75em;
+  line-height: 0;
+  vertical-align: 1.2em; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+/* LINKS */
+a {
+  color: #bada55;
+  text-decoration: none;
+  cursor: pointer; }
+  a:hover {
+    color: #b2d540;
+    text-decoration: underline;
+    border: 0;
+    outline: 0; }
+  a:visited {
+    color: #a8cf2d; }
+  a:focus, a:active {
+    color: #97ba28;
+    border: 0;
+    outline: 0; }
+  a img {
+    border: 0;
+    outline: 0; }
+
+strong a {
+  font-weight: bold; }
+
+/* SELECTION */
+::-moz-selection {
+  background-color: grey;
+  color: white;
+  text-shadow: none; }
+
+::selection {
+  background-color: grey;
+  color: white;
+  text-shadow: none; }
+
+/* ELEMENTS */
+hr {
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  background-color: #bfbfbf; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+figure {
+  margin-bottom: 1.2em; }
+
+figcaption {
+  display: block;
+  margin: 0 0 1.2em 0;
+  padding: 0;
+  font-weight: normal; }
+
+/* FORMS */
+label {
+  font-size: .875em;
+  color: #404040; }
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="url"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="file"],
+select,
+textarea,
+.textbox {
+  display: block;
+  width: 100%;
+  max-width: 768px;
+  padding: 0.25em;
+  margin-bottom: 1.2em;
+  background-color: white;
+  border: 1px solid grey;
+  color: #404040;
+  font-size: .875em; }
+  input[type="text"]:active, input[type="text"]:focus,
+  input[type="date"]:active,
+  input[type="date"]:focus,
+  input[type="time"]:active,
+  input[type="time"]:focus,
+  input[type="datetime"]:active,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:active,
+  input[type="datetime-local"]:focus,
+  input[type="url"]:active,
+  input[type="url"]:focus,
+  input[type="email"]:active,
+  input[type="email"]:focus,
+  input[type="number"]:active,
+  input[type="number"]:focus,
+  input[type="search"]:active,
+  input[type="search"]:focus,
+  input[type="file"]:active,
+  input[type="file"]:focus,
+  select:active,
+  select:focus,
+  textarea:active,
+  textarea:focus,
+  .textbox:active,
+  .textbox:focus {
+    border-color: #bada55; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 3px 0;
+  padding: 0;
+  *width: 13px;
+  *height: 13px; }
+
+button,
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: .25em .5em;
+  background-color: #bada55;
+  border: 1px solid #a8cf2d;
+  color: white;
+  font-size: .875em;
+  cursor: pointer; }
+
+input[type="hidden"] {
+  display: none; }
+
+input[disabled],
+select[disabled],
+textarea[disabled],
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  cursor: not-allowed; }
+
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+  font-size: .875em;
+  font-style: italic; }
+
+:-moz-placeholder {
+  color: #bfbfbf;
+  font-size: .875em;
+  font-style: italic; }
+
+:-ms-input-placeholder {
+  color: #bfbfbf;
+  font-size: .875em;
+  font-style: italic; }
+
+/* BUTTON SIZES */
+.button-xl {
+  padding: .875em 1.75em;
+  font-size: 1.25em;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box; }
+
+.button-lg {
+  padding: .5em 1em;
+  font-size: 1em;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box; }
+
+.button-med {
+  padding: .375em .75em;
+  font-size: .875em;
+  line-height: 1em;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box; }
+
+.button-xs {
+  padding: .25em .5em;
+  font-size: .75em;
+  line-height: .875em;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box; }
+
+/* TABLES */
+table {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0.6em;
+  background-color: transparent;
+  border-spacing: 0; }
+
+th,
+td {
+  padding: 0 .5em;
+  vertical-align: middle;
+  border-top: 1px solid #e6e6e6;
+  line-height: 1.2em;
+  text-align: left;
+  font-size: .875em; }
+
+th {
+  font-weight: bold; }
+
+thead th {
+  vertical-align: bottom; }
+
+thead:first-child tr:first-child th,
+thead:first-child tr-first-child td {
+  border-top: 0; }
+
+tbody tr td,
+tbody tr th {
+  -webkit-transition: background-color 0.25s 0 ease;
+  -moz-transition: background-color 0.25s 0 ease;
+  -ms-transition: background-color 0.25s 0 ease;
+  -o-transition: background-color 0.25s 0 ease;
+  transition: background-color 0.25s 0 ease; }
+
+tbody tr:hover td,
+tbody tr:hover th {
+  background-color: transparent; }
+
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+  background-color: #e6e6e6; }
