@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	<section class="content">
-		<section class="content-main" role="main">
+		<section class="content-main post-list" role="main">
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 				<article class="post article" id="post-<?php the_ID(); ?>" <?php post_class('article clearfix'); ?> role="article">
 					<header class="article-header">

@@ -653,3 +653,8 @@ tbody tr:hover th {
   width: 50%;
   margin: 3em auto;
   background-color: #bada55; }
+
+.footer-main {
+  margin-top: 1em;
+  font-size: .675em;
+  text-align: center; }
