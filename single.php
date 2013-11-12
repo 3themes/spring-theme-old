@@ -30,7 +30,6 @@
 				<section class="comments">
 					<?php comments_template( '/comments.php' ); ?>
 				</section>
-				<hr class="article-hr" />
 			</article>
 			<nav class="paginated-posts">
 				<?php wp_link_pages(); ?>
@@ -54,7 +53,7 @@
 			</article>
 		<?php endif; ?>
 	</section>
-	<?php //get_sidebar(); ?>
+	<?php get_sidebar(); ?>
 </section>
 
 <?php get_footer(); ?>

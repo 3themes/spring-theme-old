@@ -57,6 +57,6 @@
 				</article>
 			<?php endif; ?>
 		</section>
-		<?php //get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 	</section>
 <?php get_footer(); ?>
