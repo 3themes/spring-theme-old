@@ -10,6 +10,4 @@ A vanilla WordPress theme that will be the foundation for all other 3themes them
   1. cd spring-theme
   2. git submodule update --init
 4. To ensure you have the very latest Sassquatch, or to update an existing repo when we update Sassquatch, type the following commands into terminal:
-  1. cd /path/to/spring-theme
-  2. git pull origin master
-
+  1. git submodule foreach git pull origin master   #This pulls the latest of every submodule
