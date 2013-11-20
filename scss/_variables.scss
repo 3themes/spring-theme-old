@@ -1,7 +1,13 @@
 // ---- ---- ---- ---- VARIABLES ---- ---- ---- ----
 
 // Site Colors
-$primaryColor: #bada55;
+$springGreen: #84b100;
+$springLightGreen: #bada55;
+$springBlack: #322e2f;
+$springDarkGrey: #58595b;
+$springGrey: #92948f;
+$springLightGrey: #d3d5cb;
+$springWhite: #f4f4f1;
 
 // Greys
 $black: rgb(0,0,0); //#000000
@@ -13,54 +19,71 @@ $lighterGrey: lighten($black, 90%); //#e6e6e6
 $white: rgb(255,255,255); //#ffffff
 
 // Root
-$bodyColor: $white;
-$textColor: $darkGrey;
+$bodyColor: $springWhite;
+$textColor: $springBlack;
 $columnMargin: .5em;
 $gutter: 1em;
 $warningColor: red;
 
 // Typography
-$baseFont: 'PT Sans', sans-serif;
-$baseFontSize: 125%;
-$baselineHeight: 1.2em;
+$baseFont: 'Source Sans Pro', sans-serif;
+$baseFontSize: 100%;
+$baselineHeight: 1.1em;
 $headingFont: $baseFont;
 $headingLineHeight: 1.1;
-$headingFontWeight: bold;
-$headingColor: $darkGrey;
-$headingTextShadow: $lightGrey 1px 1px;
-$codeFont: Monaco, Courier New, monospace;
+
+$h1Color: $springBlack;
+$h1FontWeight: 200;
+
+$h2Color: $springDarkGrey;
+$h2FontWeight: 200;
+
+$h3Color: $springDarkGrey;
+$h3FontWeight: 200;
+
+$h4Color: $springDarkGrey;
+$h4FontWeight: 200;
+
+$h5Color: $springGrey;
+$h5FontWeight: 300;
+
+$h6Color: $springGrey;
+$h6FontWeight: 200;
+
+$headingTextShadow: none;
+$codeFont: 'Source Code Pro', sans-serif;
 
 // Links
-$linkColor: $primaryColor;
+$linkColor: $springGreen;
 $linkHover: darken($linkColor,10%);
 $linkVisited: darken($linkColor,15%);
 $linkFocus: darken($linkColor,20%);
 
 // Forms
-$textboxBackground: $white;
-$textboxBorderColor: $midGrey;
-$textboxBorderColorActive: $primaryColor;
+$textboxBackground: $springWhite;
+$textboxBorderColor: $springGrey;
+$textboxBorderColorActive: $springGreen;
 $textboxBorderWidth: 1px;
 $textboxBorderStyle: solid;
-$textboxColor: $darkGrey;
-$textboxPlaceholderColor: $lightGrey;
+$textboxColor: $textColor;
+$textboxPlaceholderColor: $springLightGrey;
 $textboxPadding: $gutter / 4;
 
-$buttonBackground: $primaryColor;
+$buttonBackground: $springGreen;
 $buttonBorderColor: darken($buttonBackground,10%);
 $buttonBorderWidth: 1px;
 $buttonBorderStyle: solid;
-$buttonColor: $white;
+$buttonColor: $springWhite;
 $buttonPadding: .25em .75em;
 
 // Tables
 $tableBackground: transparent;
-$tableStripe: $lighterGrey;
+$tableStripe: $springLightGrey;
 $tableFontSize: .875em;
 $tableLineHeight: 1.4em;
 $tableBorderWidth: 1px;
 $tableBorderStyle: solid;
-$tableBorderColor: $lighterGrey;
+$tableBorderColor: $springLightGrey;
 $tableHover: transparent;
 
 // Breakpoints

@@ -91,8 +91,6 @@ h6 {
     margin: 0;
     padding: 0;
     font-family: $headingFont;
-    font-weight: $headingFontWeight;
-    color: $headingColor;
     line-height: $headingLineHeight;
     text-rendering:  optimizeLegibility;
     text-shadow: $headingTextShadow;
@@ -101,38 +99,49 @@ h6 {
 h1,
 .h1 {
     margin-bottom: $baselineHeight / 1.5;
+    color: $h1Color;
     font-size: 1.75em;
+    font-weight: $h1FontWeight;
 }
 
 h2,
 .h2 {
     margin-bottom: $baselineHeight / 1.5;
+    color: $h2Color;
     font-size: 1.375em;
+    font-weight: $h2FontWeight;
 }
 
 h3,
 .h3 {
     margin-bottom: $baselineHeight / 1.75;
+    color: $h3Color;
     font-size: 1.25em;
+    font-weight: $h3FontWeight;
 }
 
 h4,
 .h4 {
     margin-bottom: $baselineHeight / 1.75;
+    color: $h4Color;
     font-size: 1em;
+    font-weight: $h4FontWeight;
 }
 
 h5,
 .h5 {
     margin-bottom: $baselineHeight / 2;
+    color: $h5Color;
     font-size: 1em;
+    font-weight: $h5FontWeight;
 }
 
 h6,
 .h6 {
     margin-bottom: $baselineHeight / 2;
-    font-size: 1em;
+    color: $h6Color;
     font-weight: normal;
+    font-weight: $h6FontWeight;
 }
 
 p,
@@ -199,13 +208,13 @@ u {
 }
 
 ins {
-    background-color: $lighterGrey;
+    background-color: $springLightGrey;
     color: $warningColor;
     text-decoration: none;
 }
 
 mark {
-    background-color: $lighterGrey;
+    background-color: $springLightGrey;
     color: $warningColor;
     font-style: italic;
     font-weight: bold;
@@ -218,8 +227,8 @@ samp {
     display: block;
     margin-bottom: 1em;
     padding: $gutter / 4;
-    background-color: $lightGrey;
-    border: 1px solid $darkGrey;
+    background-color: $springLightGrey;
+    border: 1px solid $springDarkGrey;
     font-family: $codeFont;
     font-size: .875em;
     color: $darkGrey;
@@ -283,13 +292,13 @@ strong a {
 
 /* SELECTION */
 ::-moz-selection {
-    background-color: $midGrey;
+    background-color: $springLightGrey;
     color: $white;
     text-shadow: none;
 }
 
 ::selection {
-    background-color: $midGrey;
+    background-color: $springLightGrey;
     color: $white;
     text-shadow: none;
 }
@@ -301,7 +310,7 @@ hr {
     padding: 0;
     height: 1px;
     border: 0;
-    background-color: $lightGrey;
+    background-color: $springLightGrey;
 }
 
 img {
