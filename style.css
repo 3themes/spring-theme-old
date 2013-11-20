@@ -654,7 +654,6 @@ tbody tr:hover th {
     margin: 0 .5em .5em 0; } }
 @media only screen and (min-width: 64em) {
   .content {
-    padding: 2em;
     *zoom: 1; }
     .content:before, .content:after {
       display: table;
@@ -663,13 +662,9 @@ tbody tr:hover th {
       clear: both; }
 
   .content-main {
-    width: -moz-calc(100% - (300px + 4em));
-    width: -webkit-calc(100% - (300px + 4em));
-    width: calc(100% - (300px + 4em));
-    float: left; }
-
-  .no-csscalc .content-main {
-    width: 61.6666666666666%; } }
+    float: left;
+    width: 66.66667%;
+    padding-right: 1em; } }
 .header-main {
   margin-bottom: 2em; }
 
@@ -778,8 +773,8 @@ tbody tr:hover th {
 @media only screen and (min-width: 64em) {
   .sidebar-main {
     float: right;
-    width: 300px;
-    padding: 0;
+    width: 33.33333%;
+    padding: 0 0 1em 0;
     border: 0;
     margin-top: 0; }
     .sidebar-main article {

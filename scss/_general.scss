@@ -105,18 +105,12 @@
 @media only screen and (min-width: #{$largeBreakpoint}) {
     //approximate min-width: 992px
     .content {
-        padding: 2em;
-        @include clearfix();
+        @include grid-row();
     }
 
         .content-main {
-            @include css3-calc('width', '100% - (300px + 4em)');
             float: left;
+            @include grid-column(8, 100%, 12);
+            padding-right: 1em;
         }
-
-    .no-csscalc {
-        .content-main {
-            width: 61.6666666666666%;
-        }
-    }
 }
