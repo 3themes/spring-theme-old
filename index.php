@@ -2,7 +2,7 @@
 	<section class="content">
 		<section class="content-main post-list" role="main">
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-				<article class="post article" id="post-<?php the_ID(); ?>" <?php post_class('article clearfix'); ?> role="article">
+				<article id="post-<?php the_ID(); ?>" <?php post_class('article clearfix'); ?> role="article">
 					<header class="article-header">
 						<h1 class="article-title">
 							<a class="article-title-link" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
