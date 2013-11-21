@@ -114,14 +114,19 @@ audio[controls], canvas, video {
 /* BODY */
 @-webkit-viewport {
   width: device-width; }
+
 @-moz-viewport {
   width: device-width; }
+
 @-ms-viewport {
   width: device-width; }
+
 @-o-viewport {
   width: device-width; }
+
 @viewport {
   width: device-width; }
+
 html {
   width: 100%;
   height: 100%;
@@ -167,6 +172,9 @@ h1,
   color: #322e2f;
   font-size: 1.75em;
   font-weight: 200; }
+  h1 a,
+  .h1 a {
+    font-weight: 200; }
 
 h2,
 .h2 {
@@ -174,6 +182,9 @@ h2,
   color: #58595b;
   font-size: 1.375em;
   font-weight: 200; }
+  h2 a,
+  .h2 a {
+    font-weight: 200; }
 
 h3,
 .h3 {
@@ -181,6 +192,9 @@ h3,
   color: #58595b;
   font-size: 1.25em;
   font-weight: 200; }
+  h3 a,
+  .h3 a {
+    font-weight: 200; }
 
 h4,
 .h4 {
@@ -188,6 +202,9 @@ h4,
   color: #58595b;
   font-size: 1em;
   font-weight: 200; }
+  h4 a,
+  .h4 a {
+    font-weight: 200; }
 
 h5,
 .h5 {
@@ -195,6 +212,9 @@ h5,
   color: #92948f;
   font-size: 1em;
   font-weight: 300; }
+  h5 a,
+  .h5 a {
+    font-weight: 300; }
 
 h6,
 .h6 {
@@ -202,6 +222,9 @@ h6,
   color: #92948f;
   font-weight: normal;
   font-weight: 200; }
+  h6 a,
+  .h6 a {
+    font-weight: 200; }
 
 p,
 ol,

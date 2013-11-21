@@ -102,6 +102,10 @@ h1,
     color: $h1Color;
     font-size: 1.75em;
     font-weight: $h1FontWeight;
+
+    a {
+        font-weight: $h1FontWeight;
+    }
 }
 
 h2,
@@ -110,6 +114,10 @@ h2,
     color: $h2Color;
     font-size: 1.375em;
     font-weight: $h2FontWeight;
+
+    a {
+        font-weight: $h2FontWeight;
+    }
 }
 
 h3,
@@ -118,6 +126,10 @@ h3,
     color: $h3Color;
     font-size: 1.25em;
     font-weight: $h3FontWeight;
+
+    a {
+        font-weight: $h3FontWeight;
+    }
 }
 
 h4,
@@ -126,6 +138,10 @@ h4,
     color: $h4Color;
     font-size: 1em;
     font-weight: $h4FontWeight;
+
+    a {
+        font-weight: $h4FontWeight;
+    }
 }
 
 h5,
@@ -134,6 +150,10 @@ h5,
     color: $h5Color;
     font-size: 1em;
     font-weight: $h5FontWeight;
+
+    a {
+        font-weight: $h5FontWeight;
+    }
 }
 
 h6,
@@ -142,6 +162,10 @@ h6,
     color: $h6Color;
     font-weight: normal;
     font-weight: $h6FontWeight;
+
+    a {
+        font-weight: $h6FontWeight;
+    }
 }
 
 p,
