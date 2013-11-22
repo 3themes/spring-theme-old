@@ -8,7 +8,7 @@
 						<?php the_title(); ?>
 					</h1>
 					<aside class="article-byline vcard">
-						<time class="updated" datetime="<?php echo the_time('Y-m-j'); ?>" pubdate><?php the_time(get_option('date_format')); ?></time> by <span class="author"><?php the_author_posts_link(); ?></span>
+						<?php spring_posted_on(); ?>
 					</aside>
 				</header>
 				<section class="article-content clearfix"  itemprop="articleBody">
@@ -24,7 +24,7 @@
 						Categories: <?php the_category(', '); ?>
 					</section>
 					<section class="article-tags">
-						<?php the_tags('<span class="tags-title">Tags:</span> ', ', ', ''); ?>
+						<?php the_tags( __( '<span class="tags-title">Tags:</span> ', 'spring_theme' ), ', ', '' ); ?>
 					</section>
 				</footer>
 				<section class="comments">
@@ -39,15 +39,15 @@
 			<article class="post-404">
 				<header class="article-header">
 					<h1 class="article-title">
-						Oops! Post not found.
+						<?php _e( 'Oops! Post not found.', 'spring_theme' ); ?>
 					</h1>
 				</header>
 				<section class="article-content clearfix">
-					Something has gone very, very, VERY wrong. Can you make sure you clicked on the right thing?
+					<?php _e( 'Something has gone very, very, VERY wrong. Can you make sure you clicked on the right thing?', 'spring_theme' ); ?>
 				</section>
 				<footer class="article-footer">
 					<p>
-						You've gotten this error message from the sidebar.php file in the template.
+						<?php _e( 'You\'ve gotten this error message from the sidebar.php file in the template.', 'spring_theme' ); ?>
 					</p>
 				</footer>
 			</article>
