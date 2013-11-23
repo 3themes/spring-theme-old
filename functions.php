@@ -41,9 +41,13 @@ function spring_theme_init()
 	// Images are sized via CSS or inline style="" attribute by user.
 	add_filter('image_send_to_editor', 'spring_remove_width_attribute', 10);
 
-	// Enable custom menus
-	add_theme_support('menus');
-
+    // This theme uses wp_nav_menu() in # location.
+	// TODO: Add to header.php
+	// TODO: Implement on live site
+    register_nav_menus( array(
+        'primary' => __( 'Primary Menu', 'spring_theme' ),
+    ) );
+    
 	// automatic feeds
 	add_theme_support('automatic-feed-links');
 }
