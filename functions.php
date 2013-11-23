@@ -41,6 +41,9 @@ function spring_theme_init()
 	// Images are sized via CSS or inline style="" attribute by user.
 	add_filter('image_send_to_editor', 'spring_remove_width_attribute', 10);
 
+	// Enable support for Aside, Gallery and Video Post Formats
+	add_theme_support( 'post-formats', array( 'aside', 'gallery', 'video' ) );
+
     // This theme uses wp_nav_menu() in # location.
 	// TODO: Add to header.php
 	// TODO: Implement on live site
