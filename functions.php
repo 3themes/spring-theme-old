@@ -2,6 +2,8 @@
 
 function spring_theme_init()
 {
+	// Add support for theme translations
+	load_theme_textdomain( 'spring_theme', get_template_directory() . '/languages' );
 
 	//enqueue all the things! (modernizr, jQuery, hoverIntent, SuperFish, comment-reply)
 	add_action('wp_enqueue_scripts', 'spring_enqueue_scripts');
@@ -103,8 +105,8 @@ function spring_register_menus()
 	if (function_exists('register_nav_menus')) {
 		register_nav_menus(
 			array(
-				'header_menu' => 'Header Menu'//,
-				//'footer_menu' => 'Footer Menu'
+				'header_menu' => __( 'Header Menu', 'spring_theme' ) //,
+				//'footer_menu' => __( 'Footer Menu', 'spring_theme' )
 			)
 		);
 	}
@@ -145,7 +147,7 @@ function spring_widgets_init()
 {
 	register_sidebar(
 		array(
-			'name' => __('Main Sidebar', 'quickchic'),
+			'name' => __('Main Sidebar', 'spring_theme'),
 			'id' => 'sidebar-1',
 			'before_widget' => '<article class="widget">',
 			'after_widget' => '</article><hr />',
@@ -164,4 +166,18 @@ function spring_html5_support() {
 function spring_remove_width_attribute($html)
 {
 	return preg_replace('/(width|height)="\d*"\s/', "", $html);
+}
+
+// Print the meta data display when a post was posted so we can reuse it
+function spring_posted_on()
+{
+	printf( __( '<time class="updated" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'spring_theme' ),
+		esc_url( get_permalink() ),
+		esc_attr( get_the_time() ),
+		esc_attr( get_the_date( 'c' ) ),
+		esc_html( get_the_date() ),
+		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		esc_attr( sprintf( __( 'Posts by %s', 'spring_theme' ), get_the_author() ) ),
+		get_the_author()
+	);
 }

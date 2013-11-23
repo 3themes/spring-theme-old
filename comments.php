@@ -5,7 +5,7 @@
         die ('Please do not load this page directly. Thanks!');
 
 	if ( post_password_required() ) { ?>
-        <section class="warning">This post is password protected. If you would like to contribute to the conversation, please sign in.</section>
+        <section class="warning"><?php _e( 'This post is password protected. If you would like to contribute to the conversation, please sign in.', 'spring_theme' ); ?></section>
         <?php return;
     }
 ?>
@@ -13,7 +13,7 @@
 <!-- COMMENTS TEMPLATE -->
 <?php if ( have_comments() ) : ?>
     <h2 class="comment-title">
-        <?php comments_number( 'There are no comments', 'There is <span>1</span> comment', 'There are <span>%</span> comments' ); ?>.
+        <?php printf( _nx( 'There is <span>1</span> comment.', 'There are <span>%1s</span> comments.', get_comments_number(), 'comments title', 'spring_theme' ), number_format_i18n( get_comments_number() ) ); ?>
     </h2>
 
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
